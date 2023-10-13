@@ -1302,7 +1302,8 @@ body h2 {
 }
 
 .reviews__slider {
-  z-index: 10;
+  z-index: 15;
+  position: relative;
 }
 
 .reviews__slider .slick-prev {
