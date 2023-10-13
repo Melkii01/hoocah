@@ -901,7 +901,7 @@ body h2 {
 
 .slick {
   position: relative;
-  z-index: 20;
+  z-index: 22;
 }
 
 .slick .slick__slider {
