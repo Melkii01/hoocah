@@ -1232,6 +1232,7 @@ body h2 {
 
 .form .form__bg-smoke-right img {
   max-width: 100%;
+  width: 300px;
 }
 
 .form .form__box {
