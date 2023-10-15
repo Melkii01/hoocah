@@ -772,16 +772,16 @@ body h2 {
   max-width: 100%;
 }
 
-.no-webp .why{
-  background: radial-gradient(rgba(0, 0, 0, 0) 40%, rgb(2, 3, 5)), url("../img/s-why-hoocah.png") no-repeat center; }
-
 .why {
   height: 812px;
+  position: relative;
+  z-index: -2;
 }
 
 .why .container {
   display: flex;
   flex-direction: column;
+  position: relative;
   z-index: 10;
 }
 
@@ -899,6 +899,15 @@ body h2 {
   display: none;
 }
 
+.why .container .why__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: -1;
+}
+
 .slick {
   position: relative;
   z-index: 22;
@@ -971,6 +980,8 @@ body h2 {
   width: 535px;
   height: 694px;
   align-self: center;
+  position: relative;
+  z-index: 22;
 }
 
 .menu .container .menu__bg .menu__price .menu__title {
@@ -1048,7 +1059,7 @@ body h2 {
 .our-rooms {
   isolation: isolate;
   position: relative;
-  z-index: 15;
+  z-index: 0;
 }
 
 .our-rooms .container .our-rooms__item {
@@ -1627,13 +1638,6 @@ body h2 {
     display: block;
   }
 
-  .no-webp .why{
-    background: radial-gradient(rgba(0, 0, 0, 0) 30%, #020305), url(../img/s-why-hoocah.png) no-repeat; }
-
-  .why {
-    height: 500px;
-  }
-
   .why .why__circle {
     transform: scale(0.7);
   }
@@ -1697,7 +1701,6 @@ body h2 {
   }
 
   .why {
-    background: unset !important;
     height: auto;
   }
 
@@ -1714,6 +1717,10 @@ body h2 {
 
   .why .container .why__circle-adaptive span {
     color: #78eaff;
+  }
+
+  .why .container .why__bg {
+    display: none;
   }
 }
 
@@ -1873,13 +1880,6 @@ body h2 {
 
 .webp .top{ background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgb(2, 3, 5)), url(../img/s-top-bg.webp) no-repeat center top; }
 
-.webp .why{ background: radial-gradient(rgba(0, 0, 0, 0) 40%, rgb(2, 3, 5)), url(../img/s-why-hoocah.webp) no-repeat center; }
-
 .webp .menu .container .menu__bg{ background: url(../img/s-menu-bg.webp) no-repeat; }
 
 .webp .form .container{ background: url(../img/s-form-smoke-bg.webp) no-repeat left center; }
-
-@media (max-width: 780px){
-
-  .webp .why{ background: radial-gradient(rgba(0, 0, 0, 0) 30%, #020305), url(../img/s-why-hoocah.webp) no-repeat; }
-}
