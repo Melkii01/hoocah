@@ -1096,7 +1096,7 @@ body h2 {
 .form {
   isolation: isolate;
   position: relative;
-  z-index: 15;
+  z-index: 16;
 }
 
 .no-webp .form .container{
@@ -1248,6 +1248,7 @@ body h2 {
   padding: 10px;
   margin-right: 0;
   display: none;
+  z-index: 100;
 }
 
 .form .form__box .form__time a {
